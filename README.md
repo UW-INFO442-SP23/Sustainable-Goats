@@ -1,5 +1,5 @@
 <div style="text-align: center">
-<h1> Seattle Parks </h1>
+<h1> Parktopia </h1>
 </div>
 
 
@@ -13,7 +13,7 @@ We are committed to contributing to the UN's Sustainable Development Goal 11: Su
 
 - Map: An interactive map of Seattle that users can explore to find green spaces in the Seattle area.
 - Map filter: A filter with important attributes to help users find the parks they want to visit.
-- Map Markers: Markers will appear on the map to show where each green space is and its name.
+- Map markers: Markers will appear on the map to show where each green space is and its name.
 - Green space cards: These cards will appear when users click on the Map Markers to get more details describing selected green space.
 - Information page: A series of section headers with information, images, a video, and text for users to learn more about the benefits of green spaces.
 - Navigation bar: An interactive nav bar that will allow users to click between the information page and the map page.
