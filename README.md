@@ -2,6 +2,7 @@
 <h1> Seattle Parks </h1>
 </div>
 
+
 The published site can be viewed here: https://sustainable-goat.vercel.app/
 
 ## Our Mission
