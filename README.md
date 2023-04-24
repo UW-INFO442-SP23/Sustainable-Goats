@@ -1,6 +1,5 @@
-<div style="text-align: center">
-<h1> Parktopia </h1>
-</div>
+<h1 align="center"> Parktopia </h1>
+
 
 
 The published site can be viewed here: https://sustainable-goat.vercel.app/
