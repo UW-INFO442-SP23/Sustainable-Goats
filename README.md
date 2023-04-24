@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div style="text-align: center">
 <h1> Seattle Parks </h1>
 </div>
@@ -31,3 +32,6 @@ We are committed to contributing to the UN's Sustainable Development Goal 11: Su
 ## References
 
 Data about Seattle city parks sourced from [Seattle Open Data](https://data.seattle.gov/Parks-and-Recreation/Seattle-Parks-and-Recreation-Parks-Features/2cer-njie).
+=======
+# Sustainable Goats
+>>>>>>> 13e0c90ffec1e608d0adc5a94bc5f8d4fc3499fb
