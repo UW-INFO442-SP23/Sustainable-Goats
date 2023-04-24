@@ -18,7 +18,7 @@ We are committed to contributing to the UN's Sustainable Development Goal 11: Su
 - Information page: A series of section headers with information, images, a video, and text for users to learn more about the benefits of green spaces.
 - Navigation bar: An interactive nav bar that will allow users to click between the information page and the map page.
 
-## Group members 
+## Group Members 
 
 - Emily Eckey
 - Delaney Edwards
