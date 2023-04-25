@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Map from './components/Map';
 import Test from './components/Test';
+import filters from './components/filters';
+import information from './components/information';
+import markersCard from './components/markersCard';
+import navbar from './components/navbar';
 
 function App(){
 
