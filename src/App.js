@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Map from './components/Map';
-import Test from './components/Test';
+import Map from './components/map/Map';
+import Test from './components/map/Test';
 
 function App(){
 
