@@ -25,7 +25,7 @@ const information = () => {
 
       <section className="section">
             <div className="image-container">
-              <img src="https://example.com/image2.jpg" alt="Image 2" />
+              <img src="" alt="Image 2" />
             </div>
             <h2 className="section-heading">Sustainable Development Goal 11.7</h2>
             <div className="text-container">
@@ -49,7 +49,7 @@ const information = () => {
 
       <section className="section">
             <div className="image-container">
-              <img src="https://example.com/image3.jpg" alt="Image 3" />
+              <img src="" alt="Image 3" />
             </div>
             <h2 className="section-heading">Seattel Green Spaces</h2>
             <div className="text-container">
@@ -150,7 +150,10 @@ const information = () => {
               social activity and stronger neighborhood relationships. This can be particularly
               important in maintaining a high quality of life for elderly people.
               </p>
-        </div>
+            </div>
+            <div class="video-container">
+              <iframe src="https://youtu.be/GRApAQHi7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
       </section>
 
     </div>
