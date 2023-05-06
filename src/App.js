@@ -5,7 +5,7 @@ import Map from './components/map/Map';
 import Test from './components/map/Test';
 import filters from './components/filters';
 import information from './components/information';
-import MarkersCard from './components/MarkersCard';
+import MarkersCard from './components/markersCard';
 import navbar from './components/navbar';
 
 function App(){
