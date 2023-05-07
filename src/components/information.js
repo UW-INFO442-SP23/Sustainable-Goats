@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from "react";
+import "./Information.css"
 
 const information = () => {
   //<h1 class="card-title">Card Title</h1>
@@ -33,7 +34,7 @@ const information = () => {
               Sustainable Development Goal 11.7 is one of the targets set under
               Goal 11 of the United Nations' 2030 Agenda for Sustainable Development.
               Goal 11 aims to make cities and human settlements inclusive, safe,
-              resilient, and sustainable. Specifically, SDG 11.7 aims to, “by 2030,
+              resilient, and sustainable. Specifically, <a href="https://www.un.org/sustainabledevelopment/cities/">SDG 11.7</a> aims to, “by 2030,
               provide universal access to safe, inclusive and accessible, green and
               public spaces, in particular for women and children, older persons and
               persons with disabilities.” This includes parks, playgrounds, public
@@ -51,13 +52,13 @@ const information = () => {
             <div className="image-container">
               <img src="" alt="Image 3" />
             </div>
-            <h2 className="section-heading">Seattel Green Spaces</h2>
+            <h2 className="section-heading">Seattle Green Spaces</h2>
             <div className="text-container">
               <p>
               As Seattle's population continues to rise, it is crucial that the city
               remains committed to preserving and enhancing its green spaces. By doing
               so, Seattle can ensure that all of its residents can enjoy the benefits
-              of its natural assets. The Office of Sustainability & Environment has set
+              of its natural assets. The <a href="https://www.seattle.gov/environment/environmental-progress/trees-and-green-space">Office of Sustainability & Environment</a> has set
               a goal of increasing the number of Seattle households within a 10-minute
               walk of a park. In 2018, this goal was achieved for 94% of Seattle
               households, and 77% of households in urban villages were within a 5-minute
@@ -71,7 +72,7 @@ const information = () => {
               parks in 2018 and has 14 more parks in development. These parks are
               being acquired in areas that will increase equitable access to parks,
               particularly in growing urban villages. To help fund the acquisition
-              of new land, the Seattle Park District provides $2 million annually,
+              of new land, the <a href="https://www.seattle.gov/seattle-park-district/about">Seattle Park District</a> provides $2 million annually,
               which is matched one-to-one by the state. By prioritizing the
               acquisition of parkland in areas with the greatest need and leveraging
               funding from both the city and the state, Seattle can continue to
@@ -89,14 +90,15 @@ const information = () => {
               and resources to help create and promote the development of green spaces
               in urban areas.
               <ul>
-                <li> "Creating Parks and Public Spaces for People of All Ages: A Step-by-Step
-                  Guide" is a guide that can help local leaders, policy makers,
+                <li> <a href="https://www.aarp.org/content/dam/aarp/livable-communities/livable-documents/documents-2018/Parks%20Guide-LR-091018-singles.pdf">"Creating Parks and Public Spaces for People of All Ages: A Step-by-Step
+                  Guide"</a> is a guide that can help local leaders, policy makers,
                   community advocates, and neighborhood residents collect data, evaluate
                   opportunities, and generate ideas for increasing the quality and quantity
                   of parks and outdoor spaces across the country.
                 </li>
-                <li> "Connecting People to Parks: A Toolkit to Increase Safe and Equitable
-                  Access to Local Parks and Green Spaces" is a useful resource that provides
+                <li> <a href="https://saferoutespartnership.org/sites/default/files/resource_files/oregon_health_authority_toolkit.pdf">
+                "Connecting People to Parks: A Toolkit to Increase Safe and Equitable
+                  Access to Local Parks and Green Spaces"</a> is a useful resource that provides
                   guidance for parks and recreation agencies that want to work with community
                   partners to promote local change. This toolkit is designed to help agencies
                   use the Safe Routes to Parks framework to create parks and activity-friendly
@@ -120,12 +122,14 @@ const information = () => {
               combination with our green spaces map, these tools can provide valuable location
               data and insights to help inform decision-making.
               <ul>
-                <li> ParkServe®This platform shows park-related data for 14,000 US cities and
+                <li> <a href="https://www.tpl.org/parkserve">
+                ParkServe®</a> This platform shows park-related data for 14,000 US cities and
                   towns. Users can see the location of parks in a community, as well as
                   neighborhoods within a 10-minute walk to a park. It can also highlight areas
                   that lack access to parks altogether.
                 </li>
-                <li> ParkScore®This index ranks park systems in the 100 most populated US cities.
+                <li> <a href="https://www.tpl.org/parkscore">
+                ParkScore®</a> This index ranks park systems in the 100 most populated US cities.
                   The total score is based on five key categories: access, investment, amenities,
                   acreage, and equity. By leveraging this information, policy makers and community
                   members can better understand how their local park system compares to others,
@@ -152,7 +156,25 @@ const information = () => {
               </p>
             </div>
             <div class="video-container">
-              <iframe src="https://youtu.be/GRApAQHi7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GRApAQHi7fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+      </section>
+
+      <section className="section">
+            <h2 className="section-heading">Get Involved</h2>
+            <div className="text-container">
+              <p> There are numerous ways to engage with green spaces and enjoy the benefits of being surrounded by nature:
+              <ul>
+                <li> One way is to plant your own garden if you have access to a backyard or balcony. This allows you to create a green space that you can tend to and enjoy in the comfort of your own home.
+                </li>
+                <li> Another way is to volunteer at your nearby park or nature reserve. By helping with tasks such as planting, trail maintenance, or clearing invasive species, you can give back to the community while also spending time outdoors.
+                </li>
+                <li> Attending local events is also an excellent way to learn more about green spaces and connect with others who share your interests. For example, the New York Restoration Project organizes tree planting ceremonies and nature walks to help residents advocate for the right to green spaces and promote restoration.
+                </li>
+                <li> If you're looking for a more communal experience, consider joining or creating a community garden. This allows you to work with like-minded individuals to cultivate a shared green space, while also enjoying the benefits of being surrounded by nature.
+                </li>
+              </ul>
+              </p>
             </div>
       </section>
 
