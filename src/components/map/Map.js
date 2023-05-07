@@ -8,12 +8,12 @@ import {Icon} from 'leaflet'
 
 const Map = () => {
     return (
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} id={"map"}>
+            <MapContainer center={[47.60, -122.33]} zoom={13} scrollWheelZoom={false} id={"map"}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
+                <Marker position={[47.60, -122.33]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
