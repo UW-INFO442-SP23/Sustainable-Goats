@@ -6,12 +6,13 @@ import "./Map.css"
 import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'
 import {data} from '../converted'
+import {cleanData} from '../cleaned'
 const Map = () => {
 
   
     const newData = data.filter(row => (row.xPos !== '' && row.yPos !== ''))
-    console.log(newData);   
-
+    console.log(data.length); 
+    console.log(cleanData.length);
     return (
             <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} id={"map"}>
                 <TileLayer
