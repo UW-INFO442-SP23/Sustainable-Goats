@@ -1,5 +1,7 @@
 import * as React from "react";
-import "./Information.css"
+import "./Information.css";
+import SDG11 from "../img/SDG11.png"
+import bikePark from "../img/bike-in-park.jpg"
 
 const information = () => {
   //<h1 class="card-title">Card Title</h1>
@@ -26,7 +28,7 @@ const information = () => {
 
       <section className="section">
             <div className="image-container">
-              <img src="" alt="Image 2" />
+              <img src={SDG11} alt="SDG 11 Sustainable Cities"/>
             </div>
             <h2 className="section-heading">Sustainable Development Goal 11.7</h2>
             <div className="text-container">
@@ -34,11 +36,11 @@ const information = () => {
               Sustainable Development Goal 11.7 is one of the targets set under
               Goal 11 of the United Nations' 2030 Agenda for Sustainable Development.
               Goal 11 aims to make cities and human settlements inclusive, safe,
-              resilient, and sustainable. Specifically, <a href="https://www.un.org/sustainabledevelopment/cities/">SDG 11.7</a> aims to, “by 2030,
-              provide universal access to safe, inclusive and accessible, green and
-              public spaces, in particular for women and children, older persons and
-              persons with disabilities.” This includes parks, playgrounds, public
-              gardens, and other green spaces that can provide numerous benefits,
+              resilient, and sustainable. Specifically, <a href="https://www.un.org/sustainabledevelopment/cities/">SDG 11.7</a> aims 
+              to, “by 2030, provide universal access to safe, inclusive and 
+              accessible, green and public spaces, in particular for women and children, 
+              older persons and persons with disabilities.” This includes parks, playgrounds, 
+              public gardens, and other green spaces that can provide numerous benefits,
               including improving physical and mental health, promoting community
               cohesion, and mitigating the impacts of climate change. By promoting
               access to safe, inclusive, and accessible green and public spaces,
@@ -50,7 +52,7 @@ const information = () => {
 
       <section className="section">
             <div className="image-container">
-              <img src="" alt="Image 3" />
+              <img src={bikePark} alt="SDG 11 Sustainable Cities"/>
             </div>
             <h2 className="section-heading">Seattle Green Spaces</h2>
             <div className="text-container">
@@ -58,7 +60,8 @@ const information = () => {
               As Seattle's population continues to rise, it is crucial that the city
               remains committed to preserving and enhancing its green spaces. By doing
               so, Seattle can ensure that all of its residents can enjoy the benefits
-              of its natural assets. The <a href="https://www.seattle.gov/environment/environmental-progress/trees-and-green-space">Office of Sustainability & Environment</a> has set
+              of its natural assets. The <a href="https://www.seattle.gov/environment/environmental-progress/trees-and-green-space">
+              Office of Sustainability & Environment</a> has set
               a goal of increasing the number of Seattle households within a 10-minute
               walk of a park. In 2018, this goal was achieved for 94% of Seattle
               households, and 77% of households in urban villages were within a 5-minute
@@ -72,7 +75,8 @@ const information = () => {
               parks in 2018 and has 14 more parks in development. These parks are
               being acquired in areas that will increase equitable access to parks,
               particularly in growing urban villages. To help fund the acquisition
-              of new land, the <a href="https://www.seattle.gov/seattle-park-district/about">Seattle Park District</a> provides $2 million annually,
+              of new land, the <a href="https://www.seattle.gov/seattle-park-district/about">
+              Seattle Park District</a> provides $2 million annually,
               which is matched one-to-one by the state. By prioritizing the
               acquisition of parkland in areas with the greatest need and leveraging
               funding from both the city and the state, Seattle can continue to
@@ -90,7 +94,8 @@ const information = () => {
               and resources to help create and promote the development of green spaces
               in urban areas.
               <ul>
-                <li> <a href="https://www.aarp.org/content/dam/aarp/livable-communities/livable-documents/documents-2018/Parks%20Guide-LR-091018-singles.pdf">"Creating Parks and Public Spaces for People of All Ages: A Step-by-Step
+                <li> <a href="https://www.aarp.org/content/dam/aarp/livable-communities/livable-documents/documents-2018/Parks%20Guide-LR-091018-singles.pdf">
+                  "Creating Parks and Public Spaces for People of All Ages: A Step-by-Step
                   Guide"</a> is a guide that can help local leaders, policy makers,
                   community advocates, and neighborhood residents collect data, evaluate
                   opportunities, and generate ideas for increasing the quality and quantity
@@ -163,15 +168,25 @@ const information = () => {
       <section className="section">
             <h2 className="section-heading">Get Involved</h2>
             <div className="text-container">
-              <p> There are numerous ways to engage with green spaces and enjoy the benefits of being surrounded by nature:
+              <p> There are numerous ways to engage with green spaces and enjoy the benefits of 
+                being surrounded by nature:
               <ul>
-                <li> One way is to plant your own garden if you have access to a backyard or balcony. This allows you to create a green space that you can tend to and enjoy in the comfort of your own home.
+                <li> One way is to plant your own garden if you have access to a backyard or balcony. 
+                  This allows you to create a green space that you can tend to and enjoy in the 
+                  comfort of your own home.
                 </li>
-                <li> Another way is to volunteer at your nearby park or nature reserve. By helping with tasks such as planting, trail maintenance, or clearing invasive species, you can give back to the community while also spending time outdoors.
+                <li> Another way is to volunteer at your nearby park or nature reserve. By helping 
+                  with tasks such as planting, trail maintenance, or clearing invasive species, 
+                  you can give back to the community while also spending time outdoors.
                 </li>
-                <li> Attending local events is also an excellent way to learn more about green spaces and connect with others who share your interests. For example, the New York Restoration Project organizes tree planting ceremonies and nature walks to help residents advocate for the right to green spaces and promote restoration.
+                <li> Attending local events is also an excellent way to learn more about green spaces 
+                  and connect with others who share your interests. For example, the New York Restoration 
+                  Project organizes tree planting ceremonies and nature walks to help residents advocate 
+                  for the right to green spaces and promote restoration.
                 </li>
-                <li> If you're looking for a more communal experience, consider joining or creating a community garden. This allows you to work with like-minded individuals to cultivate a shared green space, while also enjoying the benefits of being surrounded by nature.
+                <li> If you're looking for a more communal experience, consider joining or creating a 
+                  community garden. This allows you to work with like-minded individuals to cultivate a 
+                  shared green space, while also enjoying the benefits of being surrounded by nature.
                 </li>
               </ul>
               </p>
