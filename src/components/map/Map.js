@@ -24,6 +24,8 @@ const Map = () => {
             markers.push(
             <Marker position={[park["yPos"], park["xPos"]]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
                 <Popup>
+                    park[Name] <br />
+                    park[Location1] <br />
                     A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
             </Marker>

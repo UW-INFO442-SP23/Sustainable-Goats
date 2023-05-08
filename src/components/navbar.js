@@ -39,7 +39,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="map">
+              <a className="nav-link" href="information">
                 Resources
               </a>
             </li>    
