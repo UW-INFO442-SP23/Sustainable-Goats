@@ -18,6 +18,14 @@
     font-size: 35px;
 }
 
+.app-logo {
+    height: 4rem;
+}
+
+.app-name {
+    height: 3rem;
+  }
+
 /* .navbar-brand img {
     height: 45px;
     width: 45px;
