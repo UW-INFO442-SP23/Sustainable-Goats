@@ -34,16 +34,14 @@ const Map = () => {
                     features.push(cleanData[key2]["Feature_Desc"])
                 }
             }
-            console.log(features)
+
+            //console.log(features)
+
+            //create the marker & its corresponding pop up
             markers.push(
             <Marker position={[park["yPos"], park["xPos"]]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
-                <Popup>
-                    
-                    <MarkersCard title = {park.Name} content={park["Location 1"]}/>
-                   
-                    {park.Name} <br />
-                    {park["Location 1"]} <br />
-                    {park.hours}
+                <Popup>   
+                    <MarkersCard title = {park.Name} hours={park.hours} address={park["Location 1"]} feature={features}/>
                 </Popup>
             </Marker>
             )
