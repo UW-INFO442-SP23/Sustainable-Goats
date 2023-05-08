@@ -15,7 +15,7 @@ export default function Navbar() {
         <a className="navbar-brand" href="/">
           <span>parktopia</span>
         </a>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -29,7 +29,7 @@ export default function Navbar() {
             className={`fa-solid ${isExpanded ? "fa-times" : "fa-bars"} fa-lg`}
             id="navbar-icon"
           ></span>
-        </button>
+        </button> */}
 
         <div className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
