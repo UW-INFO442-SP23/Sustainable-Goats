@@ -13,6 +13,7 @@ function App(){
     return (
 
        <Router>
+           <Navbar />
            <Routes>
                <Route path={"/"} element={ <Map/> } />
                <Route path={"/test"} element={<Test/> }/>
