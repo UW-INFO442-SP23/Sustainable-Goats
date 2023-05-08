@@ -1,3 +1,7 @@
 #map{
     height: 600px;
 }
+
+.leaflet-popup-content-wrapper {
+    background-color: #D8F0FB;
+}

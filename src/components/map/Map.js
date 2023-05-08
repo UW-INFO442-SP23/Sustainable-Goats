@@ -8,6 +8,7 @@ import {Icon} from 'leaflet'
 import {data} from '../converted'
 import {cleanData} from '../cleaned'
 import MarkersCard from '../markersCard'
+import ReactLeafletGoogleLayer from 'react-leaflet-google-layer';
 const Map = () => {
 
   
@@ -49,10 +50,11 @@ const Map = () => {
     }
     return (
             <MapContainer center={[47.60, -122.33]} zoom={13} scrollWheelZoom={false} id={"map"}>
-                <TileLayer
+             {/*<TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
+                /> */}   
+                <ReactLeafletGoogleLayer type={'roadmap'} />
                 {markers}
             </MapContainer>
     )

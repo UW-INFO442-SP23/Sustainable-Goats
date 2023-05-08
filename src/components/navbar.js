@@ -31,6 +31,7 @@ export default function Navbar() {
           ></span>
         </button> */}
 
+
         <div className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">

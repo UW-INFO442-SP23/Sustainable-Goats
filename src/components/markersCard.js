@@ -2,7 +2,6 @@ import React from 'react';
 import "./markersCard.css";
 
 
-
 const MarkersCard = (props) => {
     var features = props.feature;
     let featurePills = [];
