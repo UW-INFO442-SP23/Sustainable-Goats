@@ -7,6 +7,7 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'
 import {data} from '../converted'
 import {cleanData} from '../cleaned'
+import MarkersCard from '../markersCard'
 const Map = () => {
 
   
@@ -24,9 +25,9 @@ const Map = () => {
             markers.push(
             <Marker position={[park["yPos"], park["xPos"]]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
                 <Popup>
-                    park[Name] <br />
-                    park[Location1] <br />
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    
+                    <MarkersCard title = {park.Name} content={park["Location 1"]}/>
+                   
                 </Popup>
             </Marker>
             )
