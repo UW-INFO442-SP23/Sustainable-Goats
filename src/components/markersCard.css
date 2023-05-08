@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 
 .card {
     background-color: #D8F0FB;
    
+=======
+.card-pill{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+>>>>>>> 85aa86f689ba0c38a3bcec3b10d3f2f05507716d
 }
