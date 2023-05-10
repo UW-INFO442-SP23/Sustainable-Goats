@@ -102,7 +102,7 @@ const information = () => {
                   of parks and outdoor spaces across the country.
                 </li>
                 <li> <a href="https://saferoutespartnership.org/sites/default/files/resource_files/oregon_health_authority_toolkit.pdf">
-                "Connecting People to Parks: A Toolkit to Increase Safe and Equitable
+                  "Connecting People to Parks: A Toolkit to Increase Safe and Equitable
                   Access to Local Parks and Green Spaces"</a> is a useful resource that provides
                   guidance for parks and recreation agencies that want to work with community
                   partners to promote local change. This toolkit is designed to help agencies

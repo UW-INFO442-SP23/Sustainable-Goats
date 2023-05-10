@@ -26,6 +26,10 @@ p {
   margin-bottom: 1rem;
 }
 
+p li {
+  list-style-type: circle;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 1rem;
