@@ -2,6 +2,21 @@
     padding: 10px 0;
 }
 
+/* .navbar-nav {
+    margin-left: none;
+  } */
+  
+  /* .navbar-nav li {
+    float: none;
+    display: inline-block;
+  }
+  
+  .navbar-nav li a {
+    padding-left: 500px;
+    padding-right: 10px;
+  } */
+
+
 .nav-color {
     background-color: #C2E9B3;
 }
@@ -14,8 +29,9 @@
 .navbar-brand {
     display: flex;
     align-items: center;
-    font-family: 'Bebas Neue';
+    margin-right: 890px;
     font-size: 35px;
+
 }
 
 .app-logo {
@@ -26,16 +42,11 @@
     height: 3rem;
   }
 
-/* .navbar-brand img {
-    height: 45px;
-    width: 45px;
-    margin: 0 0.2em;
-} */
-
 
 .nav-link {
-    font-family: 'Bebas Neue';
+    /* font-family: 'sans-serif'; */
     font-size: 30px;
+    margin-left: auto; 
     margin: 10px;
     color: black;
 }
@@ -50,10 +61,8 @@
 
 ul {
     list-style-type: none;
-    /* margin: 10px; */
     padding: 13px;
-    float: right;
-  }
+  } 
 
 /*.navbar-toggler {
     border-color: transparent;
