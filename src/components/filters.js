@@ -48,7 +48,7 @@ function Filter() {
                 </div>
             ))}
         </div>
-    </div> 
+    </div>
   )
 }
 
@@ -61,12 +61,10 @@ const data = [
 ]
 
 const features = [
-    { id: '74', value: 'Adult Fitness Equipment' },
-    { id: ['3', '1'], value: 'Basketball' },
-    { id: ['3', '2'], value: 'Basketball' },
-    { id: '45', value: 'Baseball/Softball' },
-    { id: ['6', '1'], value: 'Boat Launch' },
-    { id: ['6', '2'], value: 'Boat Launch' },
+    { id: '1', value: 'Adult Fitness Equipment', feature: '74' },
+    { id: '2', value: 'Basketball', feature: '3-4'},
+    { id: '3', value: 'Baseball/Softball', feature: '45' },
+    { id: '4', value: 'Boat Launch', feature: '6-7' },
   ];
 
 export default Filter;
