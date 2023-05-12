@@ -1,20 +1,22 @@
 import "./filters.css";
 import React from "react";
 import { useState } from "react";
+import { VscChevronDown } from "react-icons/vsc";
+import { VscChevronUp } from "react-icons/vsc";
 
 function Filter() {
-    const [selected, setSelected] = useState(null);
-    const [checkedItems, setCheckedItems] = useState({});
+    const [selected, setSelected] = useState(false);
+    const [checkedItems, setCheckedItems] = useState(false);
 
-
+    // Toggles filter bar
     const toggle = (i) => {
         if (selected === i) {
-            return setSelected(null)
+            return setSelected(false)
         }
-
         setSelected(i)
     }
 
+     // Toggles checkbox item
     const handleChange = (event) => {
         setCheckedItems({
           ...checkedItems,
@@ -22,51 +24,53 @@ function Filter() {
         });
       };
 
-  return (
-    <div className="wrapper">
-        <div className="accordion">
-            {data.map((item, i) => (
-                <div className = "item">
-                    <div className="title" onClick={() => toggle(i)}>
-                        <h2 className="filter-title">Filters</h2>
-                        <span>{selected === i ? '▲': '▼'}</span>
-                    </div>
-                    <div className={selected === i ? 'content show': 'content'}>
-                    {features.map((features) => (
-                        <label key={features.id}>
-                        <input
-                            className="checkboxes"
-                            id={features.id}
-                            type="checkbox"
-                            checked={checkedItems[features.id] || false}
-                            onChange={handleChange}
-                        />
-                        {features.value}
-                        </label>
-                    ))}
-                    </div>
+      return (
+        <div className="wrapper">
+          <div className="accordion"> 
+            {filterType.map((item, i) => (
+              <div className="item" key={i}>
+                <div className="title" onClick={() => toggle(i)}>
+                  <h2 className="filter-title">{item.title}</h2>
+                  <span>{selected === i ? <VscChevronUp />: <VscChevronDown />}</span>
                 </div>
+                <div className={selected === i ? 'content show': 'content'}>
+                  <div className="feature-grid">
+                    {features.map((feature) => (
+                      <label key={feature.id} className="feature-label">
+                        <input
+                          className="checkboxes"
+                          id={feature.id}
+                          type="checkbox"
+                          checked={checkedItems[feature.id] || false}
+                          onChange={handleChange}
+                        />
+                        {feature.value}
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
             ))}
+          </div>
         </div>
-    </div> 
-  )
+      )
 }
 
-const data = [
-    {
-        question: 'Filters',
-        answer:
-        'Here is all the features listed and what not'
-    },
+const filterType = [
+    {title: 'Features'},
 ]
 
 const features = [
-    { id: '74', value: 'Adult Fitness Equipment' },
-    { id: ['3', '1'], value: 'Basketball' },
-    { id: ['3', '2'], value: 'Basketball' },
-    { id: '45', value: 'Baseball/Softball' },
-    { id: ['6', '1'], value: 'Boat Launch' },
-    { id: ['6', '2'], value: 'Boat Launch' },
+    { id: '1', value: 'Adult Fitness Equipment', featureRef: '74' },
+    { id: '2', value: 'Basketball', featureRef: '3-4'},
+    { id: '3', value: 'Baseball/Softball', featureRef: '45' },
+    { id: '4', value: 'Boat Launch', featureRef: '6-7' },
+    { id: '5', value: 'Fishing', featureRef: '15' },
+    { id: '6', value: 'Play Area', featureRef: '22' },
+    { id: '7', value: 'Picnic Sites', featureRef: '21' },
+    { id: '8', value: 'Tennis Court', featureRef: '29-30-31' },
+    { id: '9', value: 'Restrooms', featureRef: '27' },
+    { id: '10', value: 'Waterfront', featureRef: '36' },
   ];
 
 export default Filter;

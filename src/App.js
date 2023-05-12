@@ -22,6 +22,7 @@ function App(){
                <Route path={"/card"} element={<MarkersCard/>} />
                <Route path={"/navbar"} element={<Navbar/>} />
            </Routes>
+           <Filter/>
        </Router>
 
     )
