@@ -24,19 +24,22 @@ export default function Navbar() {
        </a>
 
          {/* <ul className="navbar-nav ms-auto"> */}
-         <ul>
-           <li className="nav-item">
-             <a className="nav-link" href="/">
-               Map
-             </a>
-           </li>
-           <li className="nav-item">
-             <a className="nav-link" href="information">
-               Resources
-             </a>
-           </li>   
-         </ul>
-       </div>
+        <a href="/menu">
+          <i class="bi bi-list"></i>
+        </a>
+        <ul class="list">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Map
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="information">
+                Resources
+              </a>
+            </li>   
+          </ul>
+        </div>
    </nav>
  );
 }

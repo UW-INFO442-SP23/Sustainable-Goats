@@ -45,17 +45,16 @@
  .app-name {
     height: 3rem;
   }
- 
- 
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    justify-content: flex-end;
-    display: flex;
-    /* justify-content: space-between; */
 
- }
+.list{
+   display:none
+}
+
+i{
+   display: flex;
+   justify-content: flex-end;
+   font-size: 50px;
+}
  
 nav {
     justify-content: space-between;
@@ -141,6 +140,23 @@ nav {
         font-size: 35px;
    
     } */
+
+@media (min-width: 576px){
+      
+   .list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      justify-content: flex-end;
+      display: flex;
+      /* justify-content: space-between; */
+
+   }
+
+   i{
+      display: none;
+   }
+}
  
  
  
