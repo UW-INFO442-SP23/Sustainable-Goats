@@ -8,7 +8,7 @@ import Information from './components/information';
 import MarkersCard from './components/markersCard';
 import Navbar from './components/navbar';
 import MobileNavbar from './components/MobileNavbar';
-
+import HomePage from './components/homepage'
 function App(){
 
     return (
@@ -16,9 +16,8 @@ function App(){
        <Router>
            <Navbar />
            <Routes>
-               <Route path={"/"} element={ <Map/> } />
+               <Route path={"/"} element={ <HomePage/> } />
                <Route path={"/test"} element={<Test/> }/>
-               {/* <Route path={"/filters"} element={<Filter/> }/> */}
                <Route path={"/information"} element={<Information/> }/>
                <Route path={"/card"} element={<MarkersCard/>} />
                <Route path={"/navbar"} element={<Navbar/>} />
