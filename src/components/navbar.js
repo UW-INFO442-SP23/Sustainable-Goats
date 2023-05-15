@@ -5,57 +5,41 @@ import logo from "../img/tree-logo.png"
 import name from "../img/parktopia.png"
 
 export default function Navbar() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  return (
-    <nav className="navbar fixed-top navbar-expand-lg nav-color">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <span><img className='app-logo' src={logo} alt='tree logo'></img>
-          <img className='app-name' src={name} alt='website name'></img>
-          </span>
-        </a>
+ const [isExpanded, setIsExpanded] = useState(false);
 
 
-        <div className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Map
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="information">
-                Resources
-              </a>
-            </li>    
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+ const toggleNavbar = () => {
+   setIsExpanded(!isExpanded);
+ };
+
+
+ return (
+  
+   <nav className="navbar fixed-top navbar-expand-lg nav-color">
+     <div className="container-fluid">
+       <a className="navbar-brand" href="/">
+         <span><img className='app-logo' src={logo} alt='tree logo'></img>
+         <img className='app-name' src={name} alt='website name'></img>
+         </span>
+       </a>
+
+         {/* <ul className="navbar-nav ms-auto"> */}
+         <ul>
+           <li className="nav-item">
+             <a className="nav-link" href="/">
+               Map
+             </a>
+           </li>
+           <li className="nav-item">
+             <a className="nav-link" href="information">
+               Resources
+             </a>
+           </li>   
+         </ul>
+       </div>
+   </nav>
+ );
 }
 
 
-// export default function Navbar(props) {
-//   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-//   <a class="navbar-brand" href="#">My Website</a>
-//   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//       <span class="navbar-toggler-icon"></span>
-//   </button>
-//   <div class="collapse navbar-collapse" id="navbarNav">
-//       <ul class="navbar-nav">
-//       <li class="nav-item active">
-//           <a class="nav-link" href="page1.html">Page 1</a>
-//       </li>
-//       <li class="nav-item">
-//           <a class="nav-link" href="page2.html">Page 2</a>
-//       </li>
-//       </ul>
-//   </div>
-//   </nav>
-// }
+
