@@ -6,15 +6,16 @@ import "./Map.css"
 import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'
 import {data} from '../converted'
-import {cleanData} from '../cleaned'
+// import {cleanData} from '../cleaned'
 import MarkersCard from '../markersCard'
 import ReactLeafletGoogleLayer from 'react-leaflet-google-layer';
-const Map = () => {
+const Map = (props) => {
 
   
-    const newData = data.filter(row => (row.xPos !== '' && row.yPos !== ''))
+   /* const newData = data.filter(row => (row.xPos !== '' && row.yPos !== ''))
     console.log(data.length); 
-    console.log(cleanData.length);
+    console.log(cleanData.length);*/
+    const cleanData = props.data;
     let markers = [];
     var parksAdded = [];
     var length = cleanData.length;

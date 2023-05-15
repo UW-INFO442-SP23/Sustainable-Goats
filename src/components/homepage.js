@@ -4,10 +4,11 @@
  import { VscChevronUp } from "react-icons/vsc";
 import Map from './map/Map'
 import './homepage.css'
+import {cleanData} from './cleaned'
 function HomePage() {
     const [selected, setSelected] = useState(false);
     const [checkedItems, setCheckedItems] = useState(false);
-
+    const [data, setData] = useState(cleanData);
     // Toggles filter bar
     const toggle = (i) => {
         if (selected === i) {
@@ -22,11 +23,28 @@ function HomePage() {
           ...checkedItems,
           [event.target.id]: event.target.checked,
         });
+        if(event.target.checked === false) {
+          setData(cleanData);
+        } else {
+          let id = event.target.id;
+        let refArray = [];
+        for(let i = 0; i < features.length; i++) {
+          if(features[i].id === id) {
+            refArray = features[i].featureRef;
+          }
+        }
+
+        console.log("this is ref: " + refArray);
+        let newData = cleanData.filter(row => refArray.includes(row.Feature_ID));
+        console.log("this is newData: " + newData);
+        setData(newData);
+        }
+        
       };
 
       return (
         <div>
-          <Map/>
+          <Map data={data}/>
         <div className="wrapper">
           <div className="accordion"> 
             {filterType.map((item, i) => (
@@ -64,16 +82,16 @@ const filterType = [
 ]
 
 const features = [
-    { id: '1', value: 'Adult Fitness Equipment', featureRef: '74' },
-    { id: '2', value: 'Basketball', featureRef: '3-4'},
-    { id: '3', value: 'Baseball/Softball', featureRef: '45' },
-    { id: '4', value: 'Boat Launch', featureRef: '6-7' },
-    { id: '5', value: 'Fishing', featureRef: '15' },
-    { id: '6', value: 'Play Area', featureRef: '22' },
-    { id: '7', value: 'Picnic Sites', featureRef: '21' },
-    { id: '8', value: 'Tennis Court', featureRef: '29-30-31' },
-    { id: '9', value: 'Restrooms', featureRef: '27' },
-    { id: '10', value: 'Waterfront', featureRef: '36' },
+    { id: '1', value: 'Adult Fitness Equipment', featureRef: ["74"] },
+    { id: '2', value: 'Basketball', featureRef: ["3","4"]},
+    { id: '3', value: 'Baseball/Softball', featureRef: ["45"] },
+    { id: '4', value: 'Boat Launch', featureRef: ["6","7"] },
+    { id: '5', value: 'Fishing', featureRef: ["15"] },
+    { id: '6', value: 'Play Area', featureRef: ["22"] },
+    { id: '7', value: 'Picnic Sites', featureRef: ["21"] },
+    { id: '8', value: 'Tennis Court', featureRef: ["29","30","31"] },
+    { id: '9', value: 'Restrooms', featureRef: ["27"] },
+    { id: '10', value: 'Waterfront', featureRef: ["36"]},
   ];
 
 export default HomePage;
