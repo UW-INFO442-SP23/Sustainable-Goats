@@ -1,3 +1,6 @@
+.home-container {
+  margin-top: 0;
+}
 .wrapper {
   display:flex;
   height: 100%;

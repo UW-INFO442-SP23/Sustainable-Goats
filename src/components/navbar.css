@@ -59,6 +59,7 @@ ul {
  
 nav {
     justify-content: space-between;
+    
  }
 
  .nav-link {
@@ -84,6 +85,7 @@ nav {
     color: blue;
  }
  
+
  
  /* ul {
     list-style-type: none;

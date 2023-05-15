@@ -33,7 +33,10 @@ const Map = (props) => {
             for(var n = 0; n < length; n++){
                 var key2 = n;
                 if(cleanData[key2]["PMAID"] == park["PMAID"]){
-                    features.push(cleanData[key2]["Feature_Desc"])
+                    if(!features.includes(cleanData[key2]["Feature_Desc"])) {
+                        features.push(cleanData[key2]["Feature_Desc"])
+                    }
+                    
                 }
             }
 

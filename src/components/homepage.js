@@ -43,7 +43,7 @@ function HomePage() {
       };
 
       return (
-        <div>
+        <div className="home-container">
           <Map data={data}/>
         <div className="wrapper">
           <div className="accordion"> 
