@@ -7,6 +7,7 @@ const information = () => {
   //<h1 class="card-title">Card Title</h1>
   return (
     <div>
+
       <section className="section">
             <div className="info-container">
             <h2 className="section-heading">Why are Green Spaces Important?</h2>
@@ -93,14 +94,14 @@ const information = () => {
               There are several valuable guides available that provide information
               and resources to help create and promote the development of green spaces
               in urban areas.
-              <ul>
+              
                 <li> <a href="https://www.aarp.org/content/dam/aarp/livable-communities/livable-documents/documents-2018/Parks%20Guide-LR-091018-singles.pdf">
                   "Creating Parks and Public Spaces for People of All Ages: A Step-by-Step
                   Guide"</a> is a guide that can help local leaders, policy makers,
                   community advocates, and neighborhood residents collect data, evaluate
                   opportunities, and generate ideas for increasing the quality and quantity
-                  of parks and outdoor spaces across the country.
-                </li>
+                  of parks and outdoor spaces across the country.</li>
+
                 <li> <a href="https://saferoutespartnership.org/sites/default/files/resource_files/oregon_health_authority_toolkit.pdf">
                   "Connecting People to Parks: A Toolkit to Increase Safe and Equitable
                   Access to Local Parks and Green Spaces"</a> is a useful resource that provides
@@ -109,7 +110,7 @@ const information = () => {
                   use the Safe Routes to Parks framework to create parks and activity-friendly
                   routes that are safe, inclusive, and equitable for all community members.
                 </li>
-              </ul>
+              
               By using these guides, cities and communities can take steps to increase the
               number and quality of green spaces in urban areas. These resources provide
               valuable information and guidance that can help create safe and accessible parks
@@ -126,7 +127,7 @@ const information = () => {
               members alike when it comes to creating public green spaces. When used in
               combination with our green spaces map, these tools can provide valuable location
               data and insights to help inform decision-making.
-              <ul>
+             
                 <li> <a href="https://www.tpl.org/parkserve">
                 ParkServe®</a> This platform shows park-related data for 14,000 US cities and
                   towns. Users can see the location of parks in a community, as well as
@@ -140,7 +141,6 @@ const information = () => {
                   members can better understand how their local park system compares to others,
                   and identify areas for improvement.
                 </li>
-              </ul>
               By using these mapping tools, policy makers and community members can make more
               informed decisions when creating public green spaces, ensuring that they are both
               accessible and equitable for all.
@@ -170,7 +170,6 @@ const information = () => {
             <div className="text-container">
               <p> There are numerous ways to engage with green spaces and enjoy the benefits of 
                 being surrounded by nature:
-              <ul>
                 <li> One way is to plant your own garden if you have access to a backyard or balcony. 
                   This allows you to create a green space that you can tend to and enjoy in the 
                   comfort of your own home.
@@ -188,7 +187,6 @@ const information = () => {
                   community garden. This allows you to work with like-minded individuals to cultivate a 
                   shared green space, while also enjoying the benefits of being surrounded by nature.
                 </li>
-              </ul>
               </p>
             </div>
       </section>
