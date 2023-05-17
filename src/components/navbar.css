@@ -184,7 +184,7 @@ nav {
 
    }
 
-   i{
+   .mobile-menu-icon{
       display: none;
    }
 }

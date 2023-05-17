@@ -7,7 +7,6 @@ import Test from './components/map/Test';
 import Information from './components/information';
 import MarkersCard from './components/markersCard';
 import Navbar from './components/navbar';
-import MobileNavbar from './components/MobileNavbar';
 import HomePage from './components/homepage'
 function App(){
 
@@ -21,7 +20,6 @@ function App(){
                <Route path={"/information"} element={<Information/> }/>
                <Route path={"/card"} element={<MarkersCard/>} />
                <Route path={"/navbar"} element={<Navbar/>} />
-               <Route path={"/menu"} element={<MobileNavbar/>} />
            </Routes>
            {/* <Filter/> */}
        </Router>

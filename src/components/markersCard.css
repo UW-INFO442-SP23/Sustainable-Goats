@@ -5,14 +5,14 @@
 }
 
 .card-pill{
-    border: solid;
+    border: none;
+    background-color: lightblue;
     color: black;
-    padding: 10px;
-    margin-right: 4px;
+    padding: 2px;
+    margin: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 1px;
     cursor: pointer;
     border-radius: 16px;
 }
