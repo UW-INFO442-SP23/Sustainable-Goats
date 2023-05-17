@@ -2,30 +2,37 @@ import * as React from "react";
 import "./Information.css";
 import SDG11 from "../img/SDG11.png"
 import bikePark from "../img/bike-in-park.jpg"
+import greenpic from "../img/greenspacepic.jpeg"
 
 const information = () => {
   //<h1 class="card-title">Card Title</h1>
   return (
     <div>
+       <section className="event-overview">
+                <div className="container overview-container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 overview-text">
+                            <h2>Why are Green Spaces Important?</h2>
+                            <p>Green spaces play an important role in promoting the health
+                            and well-being of individuals and communities. They provide
+                            a space for people to connect with nature and enjoy the outdoors.
+                            Access to public green spaces provide both physical and mental
+                            health benefits for individuals, such as reducing stress, anger,
+                            and aggression. In addition to the physical and mental health
+                            benefits, green spaces can also have social benefits. They can
+                            serve as a meeting place for people in the community, fostering
+                            a sense of community and belonging. Access to parks and natural
+                            areas has been shown to lessen social isolation and enhance
+                            relationship skills.
+                            </p>
+                            </div>
+                        <div className="col-lg-6 overview-img-container">
+                            <img src={greenpic} alt="Green Space of Seattle" class="img-fluid overview-img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <section className="section">
-            <div className="info-container">
-            <h2 className="section-heading">Why are Green Spaces Important?</h2>
-              <p>
-                Green spaces play an important role in promoting the health
-                and well-being of individuals and communities. They provide
-                a space for people to connect with nature and enjoy the outdoors.
-                Access to public green spaces provide both physical and mental
-                health benefits for individuals, such as reducing stress, anger,
-                and aggression. In addition to the physical and mental health
-                benefits, green spaces can also have social benefits. They can
-                serve as a meeting place for people in the community, fostering
-                a sense of community and belonging. Access to parks and natural
-                areas has been shown to lessen social isolation and enhance
-                relationship skills.
-              </p>
-        </div>
-      </section>
 
       <section className="section">
             <div className="image-container">
