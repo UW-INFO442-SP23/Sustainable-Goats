@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import logo from "../img/tree-logo.png"
 import name from "../img/parktopia.png"
+// import * as FaIcons from "react-icons/fa";
 
 export default function Navbar() {
  const [isExpanded, setIsExpanded] = useState(false);
@@ -39,6 +40,13 @@ export default function Navbar() {
               </a>
             </li>   
           </ul>
+          {/* <button className="mobile-menu-icon">
+            {isExpanded ? (
+              <i className="fas fa-times"></i>
+            ) : (
+              <i className="fa fas-bars"></i>
+            )}
+          </button> */}
         </div>
    </nav>
  );
