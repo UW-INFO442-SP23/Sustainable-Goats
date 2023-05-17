@@ -26,7 +26,7 @@ export default function Navbar() {
 
          {/* <ul className="navbar-nav ms-auto"> */}
         <a href="/menu">
-          <i class="bi bi-list"></i>
+          <i class="bi bi-list mobile-menu-icon"></i>
         </a>
         <ul class="list">
             <li className="nav-item">

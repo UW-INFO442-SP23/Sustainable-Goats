@@ -5,8 +5,7 @@
 }
 
 .card-pill{
-    background-color: #ffff;
-    border: none;
+    border: solid;
     color: black;
     padding: 10px;
     margin-right: 4px;
