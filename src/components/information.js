@@ -31,16 +31,17 @@ const information = () => {
                         </div>
                     </div>
                 </div>
+
             </section>
-
-
-      <section className="section">
-            <div className="image-container">
-              <img src={SDG11} alt="SDG 11 Sustainable Cities"/>
-            </div>
-            <h2 className="section-heading">Sustainable Development Goal 11.7</h2>
-            <div className="text-container">
-              <p>
+            <section className="event-overview">
+                <div className="container overview-container">
+                    <div className="row align-items-center">
+                    <div className="col-lg-6 overview-img-container">
+                            <img src={greenpic} alt="Green Space of Seattle" class="img-fluid overview-img" />
+                        </div>
+                        <div className="col-lg-6 overview-text">
+                        <h2 className="section-heading">Sustainable Development Goal 11.7</h2>
+                        <p>
               Sustainable Development Goal 11.7 is one of the targets set under
               Goal 11 of the United Nations' 2030 Agenda for Sustainable Development.
               Goal 11 aims to make cities and human settlements inclusive, safe,
@@ -55,8 +56,15 @@ const information = () => {
               SDG 11.7 can contribute to creating more livable and sustainable
               cities for all.
               </p>
-            </div>
-      </section>
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+  
 
       <section className="section">
             <div className="image-container">
