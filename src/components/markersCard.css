@@ -6,10 +6,49 @@
 
 .card-pill{
     border: none;
-    background-color: lightblue;
+    background-color: white;
     color: black;
-    padding: 2px;
-    margin: 2px;
+    padding: 4px;
+    margin: 4px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill-playarea{
+    border: none;
+    background-color: lightpink;
+    color: black;
+    padding: 4px;
+    margin: 4px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill-restroom{
+    border: none;
+    background-color: lightgreen;
+    color: black;
+    padding: 4px;
+    margin: 4px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill-path{
+    border: none;
+    background-color: yellow;
+    color: black;
+    padding: 4px;
+    margin: 4px !important;
     text-align: center;
     text-decoration: none;
     display: inline-block;
