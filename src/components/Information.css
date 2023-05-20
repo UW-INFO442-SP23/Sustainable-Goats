@@ -54,7 +54,22 @@ ul {
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 40%;
+}
+
+.overview-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-img {
+  width: 100%;
+  height: auto;
+}
+
+.event-overview h2 {
+  color: #2ecc71;
 }
 
 .text-container {
