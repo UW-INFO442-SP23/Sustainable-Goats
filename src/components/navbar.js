@@ -19,7 +19,7 @@ export default function Navbar() {
  return (
   
    <nav className="container-fluid navbar fixed-top navbar-expand-lg nav-color">
-     <div className="container-fluid">
+     <div className="nav-container">
        <a className="navbar-brand" href="/">
          <span><img className='app-logo' src={logo} alt='tree logo'></img>
          <img className='app-name' src={name} alt='website name'></img>

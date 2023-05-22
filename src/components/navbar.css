@@ -15,6 +15,12 @@
     padding-right: 10px;
   } */
  
+  .nav-container{
+   align-items: center !important;
+   display: flex;
+   justify-content: space-between;
+
+  }
  
  
  
