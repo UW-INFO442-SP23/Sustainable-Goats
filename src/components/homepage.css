@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
+  margin: 20px;
+  margin-left: 40px;
 }
 
 @media (max-width: 480px) {
@@ -12,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px;
   }
 }
 
@@ -24,7 +26,7 @@
 
 .text-filter text {
   display: block;
-  width: 800px; /* Adjust the width as needed */
+  width: 90%;
   font-size: 18px;
   position: relative;
   bottom: 15px;
@@ -39,6 +41,15 @@
 
 .text-filter h2 {
   font-weight: bold;
+}
+
+text {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 
@@ -69,7 +80,7 @@
 }
 
 .filter-title {
-  font-weight: bold;
+  font-weight: 400 !important;
   font-size: 28px;
   position: relative;
   bottom: 5px;
@@ -110,6 +121,8 @@ input.checkboxes {
 }
 
 .feature-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   font-size: 15px;

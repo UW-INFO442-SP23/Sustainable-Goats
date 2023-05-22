@@ -6,15 +6,15 @@
 
 #map{
     height: 700px;
-    width: 1000px;
+    width: 200%;
     border: 2px solid #00824B;
 }
 
 @media (max-width: 480px) {
     #map {
         height: 380px;
-        width: 370px;
+        width: auto;
         border: 2px solid #00824B;
-        margin-right: 10px;
+        margin-top: 10px;
     }
  }
