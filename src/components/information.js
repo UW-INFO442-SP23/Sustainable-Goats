@@ -106,11 +106,15 @@ const information = () => {
 
       </section>
 
+
+
+
       <section className="section">
-        <div className="sectioninfo">
-        <h2 className="section-heading">Mapping Tools</h2>
-        <div className="text-container">
-          <p> Mapping tools can be a powerful resource for policy makers and community
+        <div className="container overview-container">
+          <div className="row align-items-center">
+            {/* <div className="col-lg-6 overview-text"> */}
+              <h2 className="section-heading">Mapping Tools</h2>
+              <p> Mapping tools can be a powerful resource for policy makers and community
             members alike when it comes to creating public green spaces. When used in
             combination with our green spaces map, these tools can provide valuable location
             data and insights to help inform decision-making.
@@ -132,21 +136,22 @@ const information = () => {
             informed decisions when creating public green spaces, ensuring that they are both
             accessible and equitable for all.
           </p>
-
-          </div>
+          
         </div>
-      </section>
+        </div>
+</section>
 
-      <section className="sectioninfo">
-        <div className="container overview-container">
         
-            <div class="video-container">
+<section className="section">
+        <div className="container overview-container">
+          <div className="row align-items-center">
+          <div class="video-container">
             <div className="col-lg-6 overview-img-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/GRApAQHi7fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
             <div className="col-lg-6 overview-text">
               <h2 className="section-heading">Healthier Cities and Mental Health</h2>
-          <p>
+              <p>
             Spending time in green spaces has been shown to “buffer life stresses” and
             lower blood pressure by encouraging physical activity within the green spaces
             to exercise and interact with others in the community. Urban green spaces
@@ -155,17 +160,19 @@ const information = () => {
             important in maintaining a high quality of life for elderly people.
           </p>
             </div>
-
+        </div>
           </div>
         </div>
       </section>
 
 
+
       <section className="section">
-      <div className="sectioninfo">
-        <h2 className="section-heading">Get Involved</h2>
-        <div className="text-container">
-          <p> There are numerous ways to engage with green spaces and enjoy the benefits of
+        <div className="container overview-container">
+          <div className="row align-items-center">
+            {/* <div className="col-lg-6 overview-text"> */}
+              <h2 className="section-heading">Get Involved</h2>
+              <p> There are numerous ways to engage with green spaces and enjoy the benefits of
             being surrounded by nature:
             <li> One way is to plant your own garden if you have access to a backyard or balcony.
               This allows you to create a green space that you can tend to and enjoy in the
@@ -185,9 +192,11 @@ const information = () => {
               shared green space, while also enjoying the benefits of being surrounded by nature.
             </li>
           </p>
+          
         </div>
         </div>
-      </section>
+</section>
+      
 
     </div>
 
