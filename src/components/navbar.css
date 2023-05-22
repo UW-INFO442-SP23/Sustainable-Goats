@@ -20,7 +20,6 @@
    align-items: center !important;
    display: flex;
    justify-content: space-between;
-
   }
  
  
@@ -39,8 +38,6 @@
  .navbar-brand {
     display: flex;
     align-items: center;
- 
- 
  }
  
  
@@ -52,7 +49,7 @@
  .app-name {
     height: 3rem;
   }
- 
+
  
 ul {
     padding: 0;
@@ -78,15 +75,11 @@ nav {
     color: black;
     /* position: absolute;
     right: 5%; */
- 
- 
  }
- 
  
  .nav-link:hover {
-    color: #5E5B4B;
+    color: #00824B;
  }
- 
  
  .nav-link:active {
     color: blue;
