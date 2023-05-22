@@ -48,12 +48,12 @@ ul {
   color: var(--primary-color);
 }
 
-.sectioninfo {
-  padding-left: 130px;
-  padding-right: 130px;
+/* .sectioninfo {
+  /* padding-left: 130px;
+  padding-right: 130px; */
   /* padding: 2rem; */
-  /* margin: 2rem 0; */
-}
+  /* margin: 2rem 0; 
+} */
 
 .image-container {
   display: flex;

@@ -5,7 +5,6 @@ import bikePark from "../img/bike-in-park.jpg"
 import greenpic from "../img/greenspacepic.jpeg"
 
 const information = () => {
-  //<h1 class="card-title">Card Title</h1>
   return (
     <div>
       <section className="section">
@@ -67,36 +66,36 @@ const information = () => {
         <div className="container overview-container">
           <div className="row align-items-center">
             <div className="col-lg-6 overview-text">
-            <h2 className="section-heading">Seattle Green Spaces</h2>
-            <div className="text-container">
-              <p>
-                As Seattle's population continues to rise, it is crucial that the city
-                remains committed to preserving and enhancing its green spaces. By doing
-                so, Seattle can ensure that all of its residents can enjoy the benefits
-                of its natural assets. The <a href="https://www.seattle.gov/environment/environmental-progress/trees-and-green-space">
-                  Office of Sustainability & Environment</a> has set
-                a goal of increasing the number of Seattle households within a 10-minute
-                walk of a park. In 2018, this goal was achieved for 94% of Seattle
-                households, and 77% of households in urban villages were within a 5-minute
-                walk of a park. The city is also working to ensure equitable access to
-                parks, particularly in areas with identified gaps in walkability and
-                prioritized based on equity, health, income and poverty, density, and
-                opportunity.
-              </p>
-              <p>
-                To further increase access to parks, Seattle has dedicated three new
-                parks in 2018 and has 14 more parks in development. These parks are
-                being acquired in areas that will increase equitable access to parks,
-                particularly in growing urban villages. To help fund the acquisition
-                of new land, the <a href="https://www.seattle.gov/seattle-park-district/about">
-                  Seattle Park District</a> provides $2 million annually,
-                which is matched one-to-one by the state. By prioritizing the
-                acquisition of parkland in areas with the greatest need and leveraging
-                funding from both the city and the state, Seattle can continue to
-                expand access to green spaces and ensure that all residents have the
-                opportunity to enjoy the benefits of these natural assets.
-              </p>
-            </div>
+              <h2 className="section-heading">Seattle Green Spaces</h2>
+              <div className="text-container">
+                <p>
+                  As Seattle's population continues to rise, it is crucial that the city
+                  remains committed to preserving and enhancing its green spaces. By doing
+                  so, Seattle can ensure that all of its residents can enjoy the benefits
+                  of its natural assets. The <a href="https://www.seattle.gov/environment/environmental-progress/trees-and-green-space">
+                    Office of Sustainability & Environment</a> has set
+                  a goal of increasing the number of Seattle households within a 10-minute
+                  walk of a park. In 2018, this goal was achieved for 94% of Seattle
+                  households, and 77% of households in urban villages were within a 5-minute
+                  walk of a park. The city is also working to ensure equitable access to
+                  parks, particularly in areas with identified gaps in walkability and
+                  prioritized based on equity, health, income and poverty, density, and
+                  opportunity.
+                </p>
+                <p>
+                  To further increase access to parks, Seattle has dedicated three new
+                  parks in 2018 and has 14 more parks in development. These parks are
+                  being acquired in areas that will increase equitable access to parks,
+                  particularly in growing urban villages. To help fund the acquisition
+                  of new land, the <a href="https://www.seattle.gov/seattle-park-district/about">
+                    Seattle Park District</a> provides $2 million annually,
+                  which is matched one-to-one by the state. By prioritizing the
+                  acquisition of parkland in areas with the greatest need and leveraging
+                  funding from both the city and the state, Seattle can continue to
+                  expand access to green spaces and ensure that all residents have the
+                  opportunity to enjoy the benefits of these natural assets.
+                </p>
+              </div>
             </div>
             <div className="col-lg-6 overview-img-container">
               <img src={bikePark} alt="Green Space of Seattle" class="img-fluid overview-img" />
@@ -112,55 +111,57 @@ const information = () => {
       <section className="section">
         <div className="container overview-container">
           <div className="row align-items-center">
-            {/* <div className="col-lg-6 overview-text"> */}
+            <div className="col-lg-6 overview-text">
               <h2 className="section-heading">Mapping Tools</h2>
               <p> Mapping tools can be a powerful resource for policy makers and community
-            members alike when it comes to creating public green spaces. When used in
-            combination with our green spaces map, these tools can provide valuable location
-            data and insights to help inform decision-making.
+                members alike when it comes to creating public green spaces. When used in
+                combination with our green spaces map, these tools can provide valuable location
+                data and insights to help inform decision-making.
 
-            <li> <a href="https://www.tpl.org/parkserve">
-              ParkServe®</a> This platform shows park-related data for 14,000 US cities and
-              towns. Users can see the location of parks in a community, as well as
-              neighborhoods within a 10-minute walk to a park. It can also highlight areas
-              that lack access to parks altogether.
-            </li>
-            <li> <a href="https://www.tpl.org/parkscore">
-              ParkScore®</a> This index ranks park systems in the 100 most populated US cities.
-              The total score is based on five key categories: access, investment, amenities,
-              acreage, and equity. By leveraging this information, policy makers and community
-              members can better understand how their local park system compares to others,
-              and identify areas for improvement.
-            </li>
-            By using these mapping tools, policy makers and community members can make more
-            informed decisions when creating public green spaces, ensuring that they are both
-            accessible and equitable for all.
-          </p>
-          
+                <li> <a href="https://www.tpl.org/parkserve">
+                  ParkServe®</a> This platform shows park-related data for 14,000 US cities and
+                  towns. Users can see the location of parks in a community, as well as
+                  neighborhoods within a 10-minute walk to a park. It can also highlight areas
+                  that lack access to parks altogether.
+                </li>
+                <li> <a href="https://www.tpl.org/parkscore">
+                  ParkScore®</a> This index ranks park systems in the 100 most populated US cities.
+                  The total score is based on five key categories: access, investment, amenities,
+                  acreage, and equity. By leveraging this information, policy makers and community
+                  members can better understand how their local park system compares to others,
+                  and identify areas for improvement.
+                </li>
+                By using these mapping tools, policy makers and community members can make more
+                informed decisions when creating public green spaces, ensuring that they are both
+                accessible and equitable for all.
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-</section>
+      </section>
 
-        
-<section className="section">
+
+      <section className="section">
         <div className="container overview-container">
           <div className="row align-items-center">
-          <div class="video-container">
-            <div className="col-lg-6 overview-img-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GRApAQHi7fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
             <div className="col-lg-6 overview-text">
-              <h2 className="section-heading">Healthier Cities and Mental Health</h2>
-              <p>
-            Spending time in green spaces has been shown to “buffer life stresses” and
-            lower blood pressure by encouraging physical activity within the green spaces
-            to exercise and interact with others in the community. Urban green spaces
-            provide pleasant areas to relax and socialize, promoting greater levels of
-            social activity and stronger neighborhood relationships. This can be particularly
-            important in maintaining a high quality of life for elderly people.
-          </p>
+              <div class="video-container">
+                <div className="col-lg-6 overview-img-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GRApAQHi7fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div className="col-lg-6 overview-text">
+                  <h2 className="section-heading">Healthier Cities and Mental Health</h2>
+                  <p>
+                    Spending time in green spaces has been shown to “buffer life stresses” and
+                    lower blood pressure by encouraging physical activity within the green spaces
+                    to exercise and interact with others in the community. Urban green spaces
+                    provide pleasant areas to relax and socialize, promoting greater levels of
+                    social activity and stronger neighborhood relationships. This can be particularly
+                    important in maintaining a high quality of life for elderly people.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
           </div>
         </div>
       </section>
@@ -170,33 +171,33 @@ const information = () => {
       <section className="section">
         <div className="container overview-container">
           <div className="row align-items-center">
-            {/* <div className="col-lg-6 overview-text"> */}
+            <div className="col-lg-6 overview-text">
               <h2 className="section-heading">Get Involved</h2>
               <p> There are numerous ways to engage with green spaces and enjoy the benefits of
-            being surrounded by nature:
-            <li> One way is to plant your own garden if you have access to a backyard or balcony.
-              This allows you to create a green space that you can tend to and enjoy in the
-              comfort of your own home.
-            </li>
-            <li> Another way is to volunteer at your nearby park or nature reserve. By helping
-              with tasks such as planting, trail maintenance, or clearing invasive species,
-              you can give back to the community while also spending time outdoors.
-            </li>
-            <li> Attending local events is also an excellent way to learn more about green spaces
-              and connect with others who share your interests. For example, the New York Restoration
-              Project organizes tree planting ceremonies and nature walks to help residents advocate
-              for the right to green spaces and promote restoration.
-            </li>
-            <li> If you're looking for a more communal experience, consider joining or creating a
-              community garden. This allows you to work with like-minded individuals to cultivate a
-              shared green space, while also enjoying the benefits of being surrounded by nature.
-            </li>
-          </p>
-          
+                being surrounded by nature:
+                <li> One way is to plant your own garden if you have access to a backyard or balcony.
+                  This allows you to create a green space that you can tend to and enjoy in the
+                  comfort of your own home.
+                </li>
+                <li> Another way is to volunteer at your nearby park or nature reserve. By helping
+                  with tasks such as planting, trail maintenance, or clearing invasive species,
+                  you can give back to the community while also spending time outdoors.
+                </li>
+                <li> Attending local events is also an excellent way to learn more about green spaces
+                  and connect with others who share your interests. For example, the New York Restoration
+                  Project organizes tree planting ceremonies and nature walks to help residents advocate
+                  for the right to green spaces and promote restoration.
+                </li>
+                <li> If you're looking for a more communal experience, consider joining or creating a
+                  community garden. This allows you to work with like-minded individuals to cultivate a
+                  shared green space, while also enjoying the benefits of being surrounded by nature.
+                </li>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-</section>
-      
+      </section>
+
 
     </div>
 
