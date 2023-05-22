@@ -12,7 +12,7 @@ const information = () => {
         <div className="container overview-container">
           <div className="row align-items-center">
             <div className="col-lg-6 overview-text">
-              <h2>Why are Green Spaces Important?</h2>
+              <h2 className="section-heading">Why are Green Spaces Important?</h2>
               <p>Green spaces play an important role in promoting the health
                 and well-being of individuals and communities. They provide
                 a space for people to connect with nature and enjoy the outdoors.
@@ -136,25 +136,6 @@ const information = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="section">
-      <div className="sectioninfo">
-        <div className="info-container">
-          <h2 className="section-heading">Healthier Cities and Mental Health</h2>
-          <p>
-            Spending time in green spaces has been shown to “buffer life stresses” and
-            lower blood pressure by encouraging physical activity within the green spaces
-            to exercise and interact with others in the community. Urban green spaces
-            provide pleasant areas to relax and socialize, promoting greater levels of
-            social activity and stronger neighborhood relationships. This can be particularly
-            important in maintaining a high quality of life for elderly people.
-          </p>
-        </div>
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GRApAQHi7fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        </div>
-      </section> */}
 
       <section className="sectioninfo">
         <div className="container overview-container">

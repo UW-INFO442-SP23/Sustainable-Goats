@@ -1,6 +1,6 @@
 /* Color options */
 :root {
-  --primary-color: #2ecc71;
+  --primary-color: #00824B;
   --secondary-color: #3498db;
   --text-color: #333;
 }
@@ -78,11 +78,11 @@ ul {
 }
 
 .overview-container h2 {
-  color: #2ecc71;
+  color: var(--primary-color);
 }
 
 .event-overview h2 {
-  color: #2ecc71;
+  color: var(--primary-color);
 }
 
 .text-container {
