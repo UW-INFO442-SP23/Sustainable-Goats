@@ -44,7 +44,13 @@ function HomePage() {
 
       return (
         <div className="home-container">
-          <Map data={data}/>
+        <div className="text-filter">
+          <h1>About the Map</h1>
+          <text>This map was created using a dataset from Seattle Open Data called 
+            <a href="https://data.seattle.gov/Parks-and-Recreation/Seattle-Parks-and-Recreation-Parks-Features/2cer-njie">“Seattle Parks and Recreation Parks Features”.</a> 
+            This dataset was selected because it contains details about parks in Seattle, including hours,
+            features such as play areas, boat launches, and views, and it also has the coordinates of the park, which is essential for putting a marker on our map.</text>
+          <h2>Filters:</h2> 
         <div className="wrapper">
           <div className="accordion"> 
             {filterType.map((item, i) => (
@@ -73,6 +79,8 @@ function HomePage() {
             ))}
           </div>
         </div>
+        </div>
+        <Map data={data}/>
         </div>
       )
 }
