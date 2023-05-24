@@ -2,18 +2,10 @@ import "./navbar.css";
 import React, { useState, useRef } from 'react';
 import logo from "../img/tree-logo.png"
 import name from "../img/parktopia.png"
-import Overlay from 'react-bootstrap/Overlay';
-// import * as FaIcons from "react-icons/fa";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function Navbar() {
- const [isExpanded, setIsExpanded] = useState(false);
 
-
- //const toggleNavbar = () => {
- //  setIsExpanded(!isExpanded);
-
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
 
 
  return (
@@ -25,14 +17,20 @@ export default function Navbar() {
          <img className='app-name' src={name} alt='website name'></img>
          </span>
        </a>
-        <a>
-          <i class="bi bi-list mobile-menu-icon" ref={target} onClick={() => setShow(!show)}></i>
-        </a>
-        <Overlay target={target.current} show={show} placement="right">
-          <a className="nav-link" href="/">
-                Map
-              </a>
-        </Overlay>
+       <Dropdown>
+          <Dropdown.Toggle id="dropdown" menuRole="menu">
+            <i class="bi bi-list mobile-menu-icon"></i>
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item className="nav-link-mobile" href="/">
+                  Map
+            </Dropdown.Item>
+            <Dropdown.Divider></Dropdown.Divider>
+            <Dropdown.Item className="nav-link-mobile" href="information">
+                  Resources
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <ul class="list">
             <li className="nav-item">
               <a className="nav-link" href="/">
@@ -45,13 +43,6 @@ export default function Navbar() {
               </a>
             </li>   
           </ul>
-          {/* <button className="mobile-menu-icon">
-            {isExpanded ? (
-              <i className="fas fa-times"></i>
-            ) : (
-              <i className="fa fas-bars"></i>
-            )}
-          </button> */}
         </div>
    </nav>
  );
