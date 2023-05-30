@@ -45,6 +45,7 @@ h1, h2 {
 
 .accordion {
   width: 775px;
+  margin-right: 25px;
   align-items: center;
 }
 
