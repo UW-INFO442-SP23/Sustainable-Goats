@@ -1,6 +1,6 @@
 <h1>Testing Protocol</h1>
 
-We have created a series of unit tests that we will perform in order to verify that the solution meets our functional requirements.
+We have created a series of tests that we will perform in order to verify that the solution meets our functional requirements.
 
 <h2>General Test Practices</h2>
 
@@ -98,3 +98,8 @@ We have created a series of unit tests that we will perform in order to verify t
 **Output**: When a location that is not a marker is clicked, the pop up component should continue to be empty.
 
 **Pass Criteria**: The function should accurately differentiate between valid and invalid input by checking if the clicked area is a green space marker or not. For example, when we mock user events by clicking a location like “Cafe on the Ave”, which is a restaurant and not a green space marker on our map, the test should not display any text in the pop up component.
+
+<h2>Known Bugs</h2>
+
+**Media Queries**
+When switching between sizes, the map may disappear or appear very small on the righthand side of the page. To fix this, the user should view this application on desktop view or on their phone.
