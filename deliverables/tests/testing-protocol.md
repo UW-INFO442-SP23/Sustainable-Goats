@@ -13,6 +13,14 @@ We have created a series of unit tests that we will perform in order to verify t
 - Use JavaScript to assert if the map’s properties and functionalities are correct.
 - Jest or React testing library script to check the outputs with incorrect input
 
+<h2>Explanation of Homepage.test.js </h2>
+
+- Test 1 tests if our homepage renders correctly. It renders our homepage and check if a certain text "About the Map" is on the page, if it is, then it means the homepage renders correctly.
+
+- Test 2 tests if our navbar renders correctly. It renders the navbar and check if 2 certain text "Map" and "Resources" are in the navbar. If it is, then it means the navbar is correct.
+
+- Test 3 tests if the radio buttons are property set to be checked after a user click it. The test mocks user clicking one of the button callled "Adult Fitness Equipment" and see if it's clicked state is set to true. If it is, then it means the filter button is working properly.
+
 <h2>Unit Tests</h2>
 
 <h3>Dataset Testing</h3>
@@ -62,7 +70,7 @@ We have created a series of unit tests that we will perform in order to verify t
 <h4>Test 4</h4>
 
 **Input**: Select filters to refine the park markers displayed on the map
-- Valid input: Selecting one radio button to filter for hours and one or more checkboxes to filter for if the park is suitable for children, meaning the green space is a play area.
+- Valid input: Selecting one radio button to filter for if the park is suitable for children, meaning the green space is a play area.
 - Invalid input: Selecting more than one radio button or selecting an invalid filter option.
 
 **Output**: The map should display only the markers that correspond to the parks that match the selected filter criteria.
@@ -90,11 +98,3 @@ We have created a series of unit tests that we will perform in order to verify t
 **Output**: When a location that is not a marker is clicked, the pop up component should continue to be empty.
 
 **Pass Criteria**: The function should accurately differentiate between valid and invalid input by checking if the clicked area is a green space marker or not. For example, when we mock user events by clicking a location like “Cafe on the Ave”, which is a restaurant and not a green space marker on our map, the test should not display any text in the pop up component.
-
-<h3>Explanation of Homepage.test.js </h3>
-
-- The first test tests if our homepage renders correctly. It renders our homepage and check if a certain text "About the Map" is on the page, if it is, then it means the homepage renders correctly.
-
-- The second test tests if our navbar renders correctly. It renders the navbar and check if 2 certain text "Map" and "Resources" are in the navbar. If it is, then it means the navbar is correct.
-
-- The third test tests if the radio button's property is set to be checked after a user click it. The test mocks user clicking one of the button callled "Adult Fitness Equipment" and see if it's checked state is set to true. If it is, then it means the filter button is working properly.

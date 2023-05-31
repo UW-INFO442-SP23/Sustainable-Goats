@@ -7,6 +7,10 @@
   margin-left: 40px;
 }
 
+.text-filter {
+  width: 90%;
+}
+
 .text-filter h1 {
   font-size: 48px;
   font-weight: bold;
@@ -19,7 +23,8 @@
   width: 90%;
   font-size: 18px;
   position: relative;
-  bottom: 15px;
+  bottom: 5px;
+  padding-bottom: 50px;
 }
 
 .text-filter h2 {
@@ -38,8 +43,8 @@ h1, h2 {
 .wrapper {
   display:flex;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: auto;
   justify-content: left;
 }
 
@@ -118,6 +123,10 @@ input.checkboxes {
 }
 
 @media (max-width: 480px) {
+  .text-filter {
+    width: 90%;
+  }
+  
   .text-filter text {
     height:auto;
     width:auto;
@@ -131,10 +140,21 @@ input.checkboxes {
     margin: 20px;
   }
 
-  .accordion {
+  .wrapper {
+    display:flex;
+    position: relative;
+    right: 5%;
+    height: 50%;
     width: auto;
-    margin-left: -10px;
-    scale: 95%;
+    justify-content: left;
+  }
+
+  .accordion {
+    right: 5%;
+    position: relative;
+    width: auto;
+    margin-right: 0;
+    align-items: center;
   }
 
   .feature-grid {
@@ -142,21 +162,32 @@ input.checkboxes {
     grid-template-columns: repeat(2, 1fr);
     width: auto;
     grid-gap: 10px;
+    scale: 90%;
     padding-left: 0px;
   }
 
   .item {
     background:#A8DBFB;
-    width: auto;
-    padding: 5px 10px;
+    scale: 90%;
+    padding: 5px;
+    right: 10px;
     border-radius: 15px;
+  }
+
+  .feature-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
   }
 
   .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     cursor: pointer;
   }
 }

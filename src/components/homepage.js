@@ -67,14 +67,14 @@ function HomePage() {
                   <h2 className="filter-title">{item.title}</h2>
                   <span>{selected === i ? <VscChevronUp />: <VscChevronDown />}</span>
                 </div>
-                <div className={selected === i ? 'content show': 'content'}>
+                <div className={selected === i ? 'content': 'content show'}>
                   <div className="feature-grid">
                     {features.map((feature) => (
                       <label key={feature.id} className="feature-label">
                         <input
                           className="checkboxes"
                           id={feature.id}
-                          type="checkbox"
+                          type="radio"
                           checked={checkedItems[feature.id] || false}
                           onChange={handleChange}
                         />
