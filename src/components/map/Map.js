@@ -15,7 +15,28 @@ const Map = (props) => {
    /* const newData = data.filter(row => (row.xPos !== '' && row.yPos !== ''))
     console.log(data.length); 
     console.log(cleanData.length);*/
+
+    
+
     const cleanData = props.data;
+   /*
+    const testData = cleanData.map(row => {
+        if(row.Feature_Desc.includes('ADA Compliant')) {
+            const newRow = {
+                ...row,
+                ADACompliant: 'TRUE'
+            }
+            return newRow;
+            
+        } else{
+            
+            return row;
+        }
+        
+    })
+
+    console.log(testData);
+    */
     let markers = [];
     var parksAdded = [];
     var length = cleanData.length;

@@ -20,24 +20,32 @@ function HomePage() {
      // Toggles checkbox item
     const handleChange = (event) => {
         setCheckedItems({
-          ...checkedItems,
+          /*...checkedItems, */
           [event.target.id]: event.target.checked,
         });
         if(event.target.checked === false) {
           setData(cleanData);
         } else {
           let id = event.target.id;
-        let refArray = [];
+        if(id === '11') {
+          let newData= cleanData.filter(row => row.ADACompliant === 'TRUE');
+          console.log("this is correct");
+          console.log(newData);
+          setData(newData);
+        } else {
+          let refArray = [];
         for(let i = 0; i < features.length; i++) {
           if(features[i].id === id) {
             refArray = features[i].featureRef;
           }
         }
-
+          
         console.log("this is ref: " + refArray);
         let newData = cleanData.filter(row => refArray.includes(row.Feature_ID));
         console.log("this is newData: " + newData);
         setData(newData);
+        }
+        
         }
         
       };
@@ -100,6 +108,7 @@ const features = [
     { id: '8', value: 'Tennis Court', featureRef: ["29","30","31"] },
     { id: '9', value: 'Restrooms', featureRef: ["27"] },
     { id: '10', value: 'Waterfront', featureRef: ["36"]},
+    { id: '11', value: 'ADA Compliant', featureRef: ["ADA"]}
   ];
 
 export default HomePage;
