@@ -18,6 +18,7 @@ We have created a series of unit tests that we will perform in order to verify t
 <h3>Dataset Testing</h3>
 
 **Test 1**
+
 **Input**: A dataset containing information on Seattle public green spaces.
 - Valid input: A dataset containing valid latitude, longitude, park name, address, size, and amenities information.
 - Invalid input: A dataset with null or incomplete values in any of the required fields.
@@ -28,6 +29,7 @@ We have created a series of unit tests that we will perform in order to verify t
 <h3>Map Feature Testing</h3>
 
 **Test 1**
+
 **Input**: A web page containing the map
 - Valid input: A valid map object with defined center coordinates, zoom level, and map options within the specified boundaries.
 - Invalid input: An undefined or null map object or out-of-bounds coordinates or invalid map options.
@@ -36,6 +38,7 @@ We have created a series of unit tests that we will perform in order to verify t
 **Pass Criteria**: The map should be rendered correctly on the web page when the valid input is provided. All the functions on the map should work correctly without any deviation from the expected results. If there is an error message displayed or deviation, the test should be considered a failure, and further debugging will be required. The map should be centered on Seattle and should be within the specified boundaries. 
 
 **Test 2**
+
 **Input**: Zoom in and out of map 
 - Valid input: Zooming in and out of the map using the +/- buttons or mouse scroll within a valid zoom range.
 - Invalid input: Zooming beyond the maximum or minimum zoom level where the map will be centered on Seattle or zooming in an invalid manner.
@@ -44,6 +47,7 @@ We have created a series of unit tests that we will perform in order to verify t
 **Pass Criteria**: The function should accurately zoom in or out of the map when the +/- buttons are clicked or the mouse is scrolled up or down within the valid zoom range. If an invalid input is entered, the function should throw an "invalid" error. The maximum and minimum zoom levels should be set such that the map will be centered on Seattle when zoomed out beyond a certain point. 
 
 **Test 3**
+
 **Input**: Dragging to see different areas of the map
 - Valid input: Dragging the map to view different areas within the city limits of Seattle.
 - Invalid input: Dragging the map to view areas outside of Seattle or dragging the map in an invalid manner.
@@ -52,6 +56,7 @@ We have created a series of unit tests that we will perform in order to verify t
 **Pass Criteria**: The function should accurately pan the map to show different areas when the map is dragged within the city limits of Seattle. If we mock the user’s event to drag outside of Seattle, the test is expected to have an error message thrown. The map should only pan to areas within Seattle, and should not pan to areas outside of the city limits.
 
 **Test 4**
+
 **Input**: Select filters to refine the park markers displayed on the map
 - Valid input: Selecting one radio button to filter for hours and one or more checkboxes to filter for if the park is suitable for children, meaning the green space is a play area.
 - Invalid input: Selecting more than one radio button or selecting an invalid filter option.
@@ -62,6 +67,7 @@ We have created a series of unit tests that we will perform in order to verify t
 <h3>Green Space Marker Testing</h3>
 
 **Test 1**
+
 **Input**: Click on green space markers for more information and name of park
 - Valid inputs: Clicking on a green space marker (userEvent.click(marker)) to display valid marker information including the name of the corresponding park.
 - Invalid inputs: Clicking on any other area of the map that is not a green space.
@@ -70,6 +76,7 @@ We have created a series of unit tests that we will perform in order to verify t
 **Pass Criteria**: The function should accurately differentiate between valid and invalid inputs by checking if the clicked area is a green space marker or not. For example, when we mock the user event of clicking a marker of “West Montlake Park”, the test file is expected to get text with “West Montlake Park” in the pop up component. 
 
 **Test 2**
+
 **Input**: Clicking on an area of a map that isn’t a marker
 - Valid input: Clicking on a location that is not a marker on the map
 - Invalid input: Clicking a marker or outside of the map
