@@ -8,6 +8,8 @@ The published site can be viewed here: https://sustainable-goat.vercel.app/
 
 We are committed to contributing to the UN's Sustainable Development Goal 11: Sustainable Cities and Communities. Our specific focus is on *SDG target 11.7*, which aims to provide universal access to safe, inclusive, and accessible green spaces by 2030. Our mission is to promote the health and well-being of individuals and communities by creating a website that helps users discover public green space parks in Seattle. By providing information on these green spaces, we hope to contribute to the creation of sustainable cities and communities that are inclusive, safe, resilient, and sustainable.
 
+**Problem Statement**: How might we promote the use and accessibility of public green spaces for women and children to ensure inclusivity and equity? 
+
 ## Features
 
 - **Map**: An interactive map of Seattle that users can explore to find green spaces in the Seattle area.
@@ -25,7 +27,30 @@ We are committed to contributing to the UN's Sustainable Development Goal 11: Su
 - Grace Kim
 - Yuhang Liu
 
-## React App
+## Developer Information
+
+Built with:
+- React JS
+- Bootstrap
+- Leaflet
+- HTML, CSS, JaveScript
+
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+
+```bash
+npm install
+```
+
+In order to run the application Type the following command
+
+```bash
+npm start
+```
+
+**create-react-app**: The following link has all the commands that can be used with create-react-app
+https://github.com/facebook/create-react-app
+
+**ReactJS**: Refer to https://reactjs.org/ to understand the concepts of ReactJS
 
 ## References
 
