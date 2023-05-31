@@ -75,7 +75,7 @@ const Map = (props) => {
     }
     return (
             
-            <MapContainer center={[47.60, -122.33]} zoom={13} scrollWheelZoom={false} id={"map"} data-testId={"map"}>
+            <MapContainer center={[47.60, -122.33]} zoom={13} scrollWheelZoom={false} id={"map"} data-testId={"map"} maxZoom={18} minZoom={11}>
              {/*<TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
