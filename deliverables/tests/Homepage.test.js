@@ -2,8 +2,8 @@ import '@testing-library/jest-dom'
 import { render, screen} from '@testing-library/react';
 import {MemoryRouter} from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
-import HomePage from '../homepage'
-import Navbar from '../navbar'
+import HomePage from '../../src/components/homepage'
+import Navbar from '../../src/components/navbar'
 
 describe('test homepage', () => {
     test("page renders correctly", () => {
