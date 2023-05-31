@@ -102,7 +102,9 @@ We have created a series of tests that we will perform in order to verify that t
 <h2>Known Bugs</h2>
 
 **Media Queries**
+
 When switching between sizes, the map may disappear or appear very small on the righthand side of the page. To fix this, the user should view this application on desktop view or on their phone.
 
 **Data Error**
 Some markers might contains information like `<br>` inside the content, this is caused by original data. We are trying to writing a code to detect these erros and replaced them with right text in the future.
+
