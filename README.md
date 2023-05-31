@@ -2,7 +2,7 @@
 
 
 
-The published site can be viewed here: https://sustainable-goat.vercel.app/
+**The published site can be viewed here**: https://sustainable-goat.vercel.app/
 
 ## Our Mission
 
@@ -13,7 +13,7 @@ We are committed to contributing to the UN's Sustainable Development Goal 11: Su
 ## Features
 
 - **Map**: An interactive map of Seattle that users can explore to find green spaces in the Seattle area.
-- **Map filter**: A filter with important attributes to help users find the parks they want to visit.
+- **Map filter**: A filter with important attributes such as play areas and restrooms to help users find the parks they want to visit. Includes an ADA compliant filter to increase accessibility to green spaces.
 - **Map markers**: Markers will appear on the map to show where each green space is and its name.
 - **Green space cards**: These cards will appear when users click on the Map Markers to get more details describing selected green space.
 - **Information page**: A series of section headers with information, images, a video, and text for users to learn more about the benefits of green spaces.
@@ -41,7 +41,7 @@ Install all the npm packages. Go into the project folder and type the following 
 npm install
 ```
 
-In order to run the application Type the following command
+In order to run the application, type the following command
 
 ```bash
 npm start
