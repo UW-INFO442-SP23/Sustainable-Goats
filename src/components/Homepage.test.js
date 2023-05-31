@@ -4,7 +4,7 @@ import {MemoryRouter} from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import HomePage from '../components/homepage'
 import Navbar from './navbar'
-
+import Map from './map/Map'
 describe('test homepage', () => {
     test("page renders correctly", () => {
         render(
