@@ -32,6 +32,9 @@ function HomePage() {
           console.log("this is correct");
           console.log(newData);
           setData(newData);
+        } else if(id === '12') {
+          let newData = cleanData;
+          setData(newData);
         } else {
           let refArray = [];
         for(let i = 0; i < features.length; i++) {
@@ -98,6 +101,8 @@ const filterType = [
 ]
 
 const features = [
+    { id: '12', value: 'View All', featureRef: ["None"]},
+    { id: '11', value: 'ADA Compliant', featureRef: ["ADA"]},
     { id: '1', value: 'Adult Fitness Equipment', featureRef: ["74"] },
     { id: '2', value: 'Basketball', featureRef: ["3","4"]},
     { id: '3', value: 'Baseball/Softball', featureRef: ["45"] },
@@ -107,8 +112,7 @@ const features = [
     { id: '7', value: 'Picnic Sites', featureRef: ["21"] },
     { id: '8', value: 'Tennis Court', featureRef: ["29","30","31"] },
     { id: '9', value: 'Restrooms', featureRef: ["27"] },
-    { id: '10', value: 'Waterfront', featureRef: ["36"]},
-    { id: '11', value: 'ADA Compliant', featureRef: ["ADA"]}
+    { id: '10', value: 'Waterfront', featureRef: ["36"]}
   ];
 
 export default HomePage;
