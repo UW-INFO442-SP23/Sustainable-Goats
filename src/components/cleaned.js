@@ -3345,7 +3345,7 @@ export const cleanData =
         "xPos": "-122.415282",
         "yPos": "47.66083",
         "Feature_ID": "3",
-        "hours": "Park Hours:</b> Daily 4 a.m. - 11:30 p.m.\r\n<b>Visitor Center Hours: Tuesday-Sunday\r\n8:30 a.m. - 5 p.m.\r\nClosed holidays",
+        "hours": "Park Hours: Daily 4 a.m. - 11:30 p.m.\r\nVisitor Center Hours: Tuesday-Sunday\r\n8:30 a.m. - 5 p.m.\r\nClosed holidays",
         "Feature_Desc": "Basketball (Full)",
         "CHILD_DESC": "Basketball Full Court #1",
         "FIELD_TYPE": "",
