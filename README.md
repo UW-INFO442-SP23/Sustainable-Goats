@@ -47,6 +47,18 @@ In order to run the application, type the following command
 npm start
 ```
 
+For running automated testing, install the following package first
+
+```bash
+npm install --save-dev @testing-library/react
+```
+
+Then run test with the following command
+
+```bash
+npm test
+```
+
 **create-react-app**: The following link has all the commands that can be used with create-react-app
 https://github.com/facebook/create-react-app
 
